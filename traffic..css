@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+body{
+    background-color: black;
+}
+.Traffic-animation{
+    width: 100%;
+    height: 400px;
+    margin: 200px 0 100px 0;
+    background-color: white;
+    background-image: url(img/ilustrasion-scene.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.vehicles img{
+    position: absolute;
+    top: 540px;
+}
+.vehicles .reversecars{   
+     
+    animation: reversecars 20s ease-out .2s infinite forwards;
+}
+@keyframes reversecars {
+    from{
+        left: 100%;
+    }
+    to{
+        left: -210%;
+    }
+}
+
+.vehicles .reversecars2{   
+     top: 555px;
+    animation: reversecars2 15s ease-out .2s infinite forwards;
+}
+@keyframes reversecars2 {
+    from{
+        left: 100%;
+    }
+    to{
+        left: -210%;
+    }
+}
+
+
+.vehicles .forward2{
+    top: 610px;
+    margin-left: -1500px;
+    animation: forward2 18s ease-in infinite forwards;
+    z-index: 2;
+}
+@keyframes forward2 {
+    from{
+        left: -1430px;
+    }
+    to{
+        left: 1550px;
+    }
+}
+
+.vehicles .forward1{
+    top: 580px;
+    z-index: 1;
+    animation: forward1 22s ease-in infinite forwards;
+    animation: name duration timing-function delay iteration-count direction fill-mode;
+}
+@keyframes forward1 {
+    from{
+        left: -200%;
+    }
+    to{
+        left: 150%;
+    }
+}
